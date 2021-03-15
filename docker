@@ -1,0 +1,7 @@
+도커데스크탑설치
+  > 1. https://www.docker.com/products/docker-desktop 설치
+  > 2. hub.docker.com > sign-up > 이미지검색 > 도커서비스이미지url복사
+    가이드: https://www.44bits.io/ko/post/easy-deploy-with-docker, https://blog.naver.com/okcharles/222081093842
+  > 3. 터미널> 도커이미지끌어오기 (ex: docker pull mcr.microsoft.com/mssql/server:﻿2019-CU6-ubuntu-16.04)
+  > 4. 터미널> 컨테이너 실행 (docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Pwd12345*" -p 11433:1433 --name "WordDevSql" -h "WordDevSql" -d mcr.microsoft.com/mssql/server:2019-CU6-ubuntu-16.04)
+  
