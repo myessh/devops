@@ -5,3 +5,9 @@
   > 3. 터미널> 도커이미지끌어오기 (ex: docker pull mcr.microsoft.com/mssql/server:﻿2019-CU6-ubuntu-16.04)
   > 4. 터미널> 컨테이너 실행 (docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Pwd12345*" -p 11433:1433 --name "WordDevSql" -h "WordDevSql" -d mcr.microsoft.com/mssql/server:2019-CU6-ubuntu-16.04)
   
+호스트-컨테이너 파일 전송
+  > host to docker: Docker cp <path>/filename <container>:/path
+  > 파일 확인 Docker exec -it <container> ls /var/<path>
+  > docker to host: docker cp <containerId>:/<path>/filename path/filename
+  > 
+  
